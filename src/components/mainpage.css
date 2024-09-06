@@ -1,0 +1,162 @@
+.container{
+    padding: 15px;
+    background-color: #f5ecea;
+
+}
+
+.container h1{
+    text-align: center;
+}
+.container span{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    padding: 20px;
+    line-height: 1.5;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.container-contacts{
+    padding: 20px;
+    background-color: #f5ecea;
+}
+.container-contacts h1{
+    text-align: center;   
+}
+.container-contacts span{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-size: 19px;
+    line-height: 1.5;
+    text-shadow: 0 4px 8px rgba(0, 0,0, 0.4);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin-top: 20px;
+    border-radius: 5px ;
+}
+
+form input,form textarea,form button{
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+form textarea{
+    resize: vertical;
+}
+
+button{
+    cursor: pointer;
+}
+
+.MainPage-div{
+    padding: 10px;
+    background-color: #f5ecea;
+}
+
+.MainPage-div form{
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin-top: 20px;
+    border-radius: 5px ;
+}
+.MainPage-div label,.MainPage-div input{
+    font-size: 20px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.grids{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+.grid{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+
+
+.btns{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    margin: 10px;
+}
+.btns button{
+    padding: 10px;
+    margin-left: 10px;
+}
+.delete-btn{
+    background-color: red;
+}
+
+.save-btn,.edit-btn{
+    background-color: green;
+    color: white;
+}
+.save-btn:hover{
+    transform: scale(1.1);
+}
+.edit-btn:hover{
+    transform: scale(1.1);
+}
+.delete-btn:hover{
+    transform: scale(1.1);
+}
+
+.input-save{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #f5ecea;
+}
+
+@media (max-width:680px){
+    .MainPage-div form{
+        max-width: 300px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:1260px){
+    .btns button{
+        padding: 5px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width:680px){
+    .btns{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
